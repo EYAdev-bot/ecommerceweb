@@ -1,0 +1,17 @@
+#conn{
+    display: none;
+    color: white;
+}
+#conn a:hover{
+ color: orange;
+}
+#cat{
+    display: none;
+}
+#cat a:hover{
+    color: orange;
+}
+
+#panier{
+    display: none;
+}
