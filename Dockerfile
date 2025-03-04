@@ -1,6 +1,6 @@
  FROM php:8.2-apache
 
- RUN docker-php-ext-install mysqli pdo pdo_mysql pdo_pgsql
+ RUN docker-php-ext-install mysqli pdo pdo_mysql 
 
  RUN a2enmod rewrite
 
@@ -11,4 +11,4 @@
  EXPOSE 80
 
  # laucn apache in baground
- CMD ("apache2-foreground")
+ CMD ["apache2-foreground"]
