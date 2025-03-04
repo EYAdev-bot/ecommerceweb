@@ -1,5 +1,5 @@
 <?php
-$ct="All Categories" ;
+$ct = "All Categories";
 $title = "home";
 $connect = "./assets/php/sing_up.php";
 $login = "./assets/php/login.php";
@@ -7,8 +7,8 @@ $admin = "./assets/php/admin.php";
 $about = "./assets/php/about.php";
 $panier = "./assets/php/panier.php";
 $bg = "./assets/img/back.png";
-$phonect="./assets/php/phonect.php" ;
-$pcct="./assets/php/computerct.php"
+$phonect = "./assets/php/phonect.php";
+$pcct = "./assets/php/computerct.php"
 
 
 
@@ -120,9 +120,47 @@ $pcct="./assets/php/computerct.php"
     </div>
 
 
-    <script src="./assets/js/deroule.js"></script>
-    <script src="./assets/js/iphone.js"></script>
-    <script src="./assets/js/panier.js"></script>
+    <script>
+        document.getElementById('users').addEventListener('click', () => {
+            let conn = document.getElementById('conn').style;
+            conn.display = conn.display == "block" ? "none" : "block"
+        })
+
+        document.getElementById('btncat').addEventListener('click', () => {
+            let cat = document.getElementById('cat').style;
+            cat.display = cat.display == "block" ? "none" : "block"
+        })
+    </script>
+    <script>
+        indexvalue = 0;
+
+        function image() {
+            setTimeout(image, 2500);
+            const img = document.querySelectorAll("#iphone");
+            for (let i = 0; i < img.length; i++) {
+                img[i].style.display = "none";
+
+            }
+            indexvalue++;
+            if (indexvalue > img.length) {
+                indexvalue = 1
+            }
+            img[indexvalue - 1].style.display = ""
+
+        }
+        image();
+    </script>
+    <script>
+        const nav = document.getElementById("head");
+        const threshold = 200;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > threshold) {
+                nav.style.transform = "translateY(-100%)"
+            } else {
+                nav.style.transform = "translateY(0%)"
+            }
+        })
+    </script>
     <script>
         const searchproduct = async () => {
             document.querySelector("#result").innerHTML = ""
