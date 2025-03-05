@@ -151,6 +151,23 @@ $pcct = "./assets/php/computerct.php"
     <?php
     include_once "./assets/php/footer.php"
     ?>
+    <script>
+        function updatebge() {
+            const btn_pan = document.getElementById("btn_panier");
+            const cart = document.getElementById("add");
+            cart.style.position = "absolute"
+
+            const rect = btn_pan.getBoundingClientRect();
+            cart.style.left = `${rect.right-10}px`
+            cart.style.top = `${rect.top-5}px`
+            console.log(`x:${rect.left}`)
+        }
+        updatebge()
+        window.addEventListener('load', updatebge);
+        window.addEventListener('resize', updatebge);
+        window.addEventListener('scroll', updatebge);
+    </script>
+
 </body>
 
 </html>
