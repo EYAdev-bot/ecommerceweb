@@ -120,47 +120,16 @@ $pcct = "./assets/php/computerct.php"
     </div>
 
 
-    <script>
-        document.getElementById('users').addEventListener('click', () => {
-            let conn = document.getElementById('conn').style;
-            conn.display = conn.display == "block" ? "none" : "block"
-        })
+    <script src="E_COMMERCE_WEB_SITE/assets/js/deroule.js">
 
-        document.getElementById('btncat').addEventListener('click', () => {
-            let cat = document.getElementById('cat').style;
-            cat.display = cat.display == "block" ? "none" : "block"
-        })
     </script>
-    <script>
-        indexvalue = 0;
+    <script src="E_COMMERCE_WEB_SITE/assets/js/iphone.js">
 
-        function image() {
-            setTimeout(image, 2500);
-            const img = document.querySelectorAll("#iphone");
-            for (let i = 0; i < img.length; i++) {
-                img[i].style.display = "none";
-
-            }
-            indexvalue++;
-            if (indexvalue > img.length) {
-                indexvalue = 1
-            }
-            img[indexvalue - 1].style.display = ""
-
-        }
-        image();
     </script>
-    <script>
-        const nav = document.getElementById("head");
-        const threshold = 200;
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > threshold) {
-                nav.style.transform = "translateY(-100%)"
-            } else {
-                nav.style.transform = "translateY(0%)"
-            }
-        })
+    <script src="E_COMMERCE_WEB_SITE/assets/panier.js">
+
     </script>
+
     <script>
         const searchproduct = async () => {
             document.querySelector("#result").innerHTML = ""
