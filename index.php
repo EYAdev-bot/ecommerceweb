@@ -123,6 +123,9 @@ $pcct = "./assets/php/computerct.php"
     </div>
 
 
+        <?php
+        include_once "./assets/php/footer.php"
+        ?>
     <script src="E_COMMERCE_WEB_SITE/assets/js/deroule.js">
 
     </script>
@@ -151,9 +154,6 @@ $pcct = "./assets/php/computerct.php"
             }
         }
     </script>
-    <?php
-    include_once "./assets/php/footer.php"
-    ?>
     <script>
         function updatebge() {
             const btn_pan = document.getElementById("btn_panier");
