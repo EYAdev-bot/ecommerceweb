@@ -19,6 +19,9 @@ $pcct = "./assets/php/computerct.php"
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/imagede.css">
     <link rel="stylesheet" href="./assets/css/conn.css">
     <link rel="stylesheet" href="./assets/css/panier.css">
