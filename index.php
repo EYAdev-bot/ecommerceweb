@@ -124,15 +124,15 @@ $pcct = "./assets/php/computerct.php"
 
 
         <?php
-        include_once "./assets/php/footer.php"
+        require("./assets/php/footer.php")
         ?>
-    <script src="E_COMMERCE_WEB_SITE/assets/js/deroule.js">
+    <script src="./assets/js/deroule.js">
 
     </script>
-    <script src="E_COMMERCE_WEB_SITE/assets/js/iphone.js">
+    <script src="./assets/js/iphone.js">
 
     </script>
-    <script src="E_COMMERCE_WEB_SITE/assets/panier.js">
+    <script src="./assets/panier.js">
 
     </script>
 
