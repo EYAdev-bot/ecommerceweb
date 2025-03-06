@@ -126,6 +126,7 @@ $pcct = "./assets/php/computerct.php"
         <?php
         require("./assets/php/footer.php")
         ?>
+        
     <script src="./assets/js/deroule.js">
 
     </script>
@@ -135,25 +136,7 @@ $pcct = "./assets/php/computerct.php"
     <script src="./assets/panier.js">
 
     </script>
-
-    <script>
-        const searchproduct = async () => {
-            document.querySelector("#result").innerHTML = ""
-            let keyproduct = document.querySelector("#text").value;
-            if (keyproduct.length >= 3) {
-
-                const req = await fetch(`./assets/php/search.php?keyproduct=${keyproduct}`)
-                const json = await req.json()
-                console.log(json)
-                if (json.length > 0) {
-                    json.forEach((post) => {
-                        document.querySelector("#result").innerHTML += '<a href="#' + post.slug + '">' + post.descriptions + "</a>" + "<br>"
-                    });
-
-                }
-            }
-        }
-    </script>
+     
     <script>
         function updatebge() {
             const btn_pan = document.getElementById("btn_panier");

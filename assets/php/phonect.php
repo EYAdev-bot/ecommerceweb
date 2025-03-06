@@ -8,16 +8,22 @@ include_once "./connect_to_bd.php";
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/imagede.css">
+    <link rel="stylesheet" href="./assets/css/conn.css">
+    <link rel="stylesheet" href="./assets/css/panier.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    
 
-        <?php
-        require('./head.php');
-        ?>
+
+    <?php
+    require('./head.php');
+    ?>
     <div class="flex flex-wrap justify-center gap-8 m-2 w-screen mt-[500px]" id="phone">
         <?php
 
@@ -69,13 +75,13 @@ include_once "./connect_to_bd.php";
                     <div></div>
                 </div>
             </div>
-        
+
         <?php
         }
         include_once "./footer.php"
         ?>
     </div>
-    
+
     <script>
         function updatebge() {
             const btn_pans = document.getElementById("head");
