@@ -5,5 +5,5 @@ document.getElementById('users').addEventListener('click',() => {
 
 document.getElementById('btncat').addEventListener('click', () => {
     let cat = document.getElementById('cat').style;
-    cat.display = cat.display=="block"? "none" : "block"
+    cat.display = cat.display=="none"? "block" : "none"
 })

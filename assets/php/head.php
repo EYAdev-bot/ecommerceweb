@@ -135,8 +135,6 @@ session_start();
     </header>
 
 </div>
-<script src=" ../js/deroule.js">
-</script>
 <script>
     const searchproduct = async () => {
         document.querySelector("#result").innerHTML = ""

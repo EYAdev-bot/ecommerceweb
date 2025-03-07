@@ -31,14 +31,16 @@ include_once "./head.php";
     </div>
 
     <div>
-           <a href="./products.php" class="flex gap-2 items-center text-[25px] justify-start w-[25%]"><img src="../img/product.png" alt="" class="w-[25px] h-[25px]">products</a>
+        <a href="./products.php" class="flex gap-2 items-center text-[25px] justify-start w-[25%]"><img src="../img/product.png" alt="" class="w-[25px] h-[25px]">products</a>
     </div>
     <div class="mb-[30px]">
         <a href="./addproducts.php" class="flex gap-2 text-[25px] items-center"><img src="../img/add1.png" alt="" class="w-[30px] h-[30px]">Add products</a>
     </div>
     <?php
-      require('./footer.php') ;
+    require('./footer.php');
     ?>
 </body>
+<script src=" ../js/deroule.js">
+</script>
 
 </html>

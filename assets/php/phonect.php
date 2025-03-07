@@ -98,6 +98,8 @@ include_once "./connect_to_bd.php";
     <script src="../js/panier.js">
 
     </script>
+    <script src=" ../js/deroule.js">
+    </script>
 </body>
 
 </html>
