@@ -153,6 +153,7 @@ $pcct = "./assets/php/computerct.php"
         window.addEventListener('resize', updatebge);
         window.addEventListener('scroll', updatebge);
     </script>
+    <script src="./assets/js/seach.js"></script>
 
 </body>
 
