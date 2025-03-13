@@ -1,8 +1,10 @@
 <?php
 session_start() ;
-
+$url = "../../index.php";
+$urls = urlencode($url);
+header("location:$url");
 ?>
-    <?php
+<?php
 require("./connect_to_bd.php") ;
   $mail = $_POST["mail"] ;
   $passwd=$_POST["passwd"] ;
@@ -17,6 +19,7 @@ require("./connect_to_bd.php") ;
     } catch (PDOException $e) {
         $sms ="mot de passe ou email invalide";
         header("location:sing_up.php?sms=$sms");
+        exit ;
         
     }
 
@@ -32,9 +35,6 @@ require("./connect_to_bd.php") ;
                     "roles"=>$v["roles"]
                 ] ;
             }
-            $url = "../../index.php";
-            $urls = urlencode($url) ;
-            header("location:$url") ;
         } catch (PDOException $e) {
             echo 'error' .$e->getMessage() ;
         }
