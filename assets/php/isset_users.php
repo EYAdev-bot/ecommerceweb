@@ -1,5 +1,6 @@
 <?php
-session_start()
+session_start() ;
+ob_start() ;
 ?>
     <?php
 require("./connect_to_bd.php") ;
@@ -31,7 +32,9 @@ require("./connect_to_bd.php") ;
                     "roles"=>$v["roles"]
                 ] ;
             }
-            header("location:../../index.php") ;
+            $url = "../../index.php";
+            $urls = urlencode($url) ;
+            header("location:$url") ;
         } catch (PDOException $e) {
             echo 'error' .$e->getMessage() ;
         }
