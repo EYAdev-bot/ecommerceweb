@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start() ;
 ?>
 
 <div class="fixed left-0 right-0 top-0 max-sm:w-[95%] font-'segio-ui' font-tohoma font-verdana font-[400] w-screen" id="head ">
