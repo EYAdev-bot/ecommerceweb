@@ -26,7 +26,6 @@ try {
     $stmt->bindParam(":phone",$phone) ;
     $stmt->bindParam(":mot_passe",$pass_hashed) ;
     $stmt->execute() ;
-    echo"eregistrer" ;
 } catch (PDOException $e) {
     echo"error". $e->getMessage() ;
 }
