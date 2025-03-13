@@ -15,9 +15,8 @@ require("./connect_to_bd.php") ;
         $stmt->execute() ;
     } catch (PDOException $e) {
         $sms ="mot de passe ou email invalide";
-        ob_start();
         header("location:sing_up.php?sms=$sms");
-        ob_end_flush() ;
+        
     }
 
     if ($yes) {
@@ -32,9 +31,7 @@ require("./connect_to_bd.php") ;
                     "roles"=>$v["roles"]
                 ] ;
             }
-            ob_start() ;
             header("location:../../index.php") ;
-            ob_end_flush() ;
         } catch (PDOException $e) {
             echo 'error' .$e->getMessage() ;
         }

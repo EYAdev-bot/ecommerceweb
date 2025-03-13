@@ -2,8 +2,8 @@
 session_start();
 ?>
 
-
 <div class="fixed left-0 right-0 top-0 max-sm:w-[95%] font-'segio-ui' font-tohoma font-verdana font-[400] w-screen" id="head ">
+    <marquee behavior="" direction="" class="text-blue-300">Design by YANNICK EKANGA </marquee>
     <div class=" flex justify-between bg-[#2F333A] text-[#fff] font-'segio ui' font-tohoma font-verdana font-[100] px-[40px] py-[10Px] w-screen max-lg:px-[10px]">
         <h1 class=" max-sm:text-sm max-sm:w-[95%]  "> Welcome to Eya & Get the best product </h1>
         <p class="max-sm:flex max-sm:justify-center">
