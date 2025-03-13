@@ -1,5 +1,7 @@
 <?php
 session_start() ;
+
+ob_start();
 $url = "../../index.php";
 $urls = urlencode($url);
 header("location:$url");
