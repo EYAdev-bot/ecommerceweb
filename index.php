@@ -1,14 +1,14 @@
 <?php
 $ct = "All Categories";
 $title = "home";
-$connect = "./assets/php/sing_up.php";
-$login = "./assets/php/login.php";
-$admin = "./assets/php/admin.php";
-$about = "./assets/php/about.php";
-$panier = "./assets/php/panier.php";
-$bg = "./assets/img/back.png";
-$phonect = "./assets/php/phonect.php";
-$pcct = "./assets/php/computerct.php"
+$connect = "assets/php/sing_up.php";
+$login = "assets/php/login.php";
+$admin = "assets/php/admin.php";
+$about = "assets/php/about.php";
+$panier = "assets/php/panier.php";
+$bg = "assets/img/back.png";
+$phonect = "assets/php/phonect.php";
+$pcct = "assets/php/computerct.php"
 
 
 
@@ -22,9 +22,9 @@ $pcct = "./assets/php/computerct.php"
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./assets/css/imagede.css">
-    <link rel="stylesheet" href="./assets/css/conn.css">
-    <link rel="stylesheet" href="./assets/css/panier.css">
+    <link rel="stylesheet" href="assets/css/imagede.css">
+    <link rel="stylesheet" href="assets/css/conn.css">
+    <link rel="stylesheet" href="assets/css/panier.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if (isset($title)) {
                 echo $title;
@@ -39,18 +39,18 @@ $pcct = "./assets/php/computerct.php"
 
         <?php
 
-        require("./assets/php/head.php");
-        require("./assets/php/connect_to_bd.php");
+        require("assets/php/head.php");
+        require("assets/php/connect_to_bd.php");
 
         ?>
     </div>
 
     </div>
     <section id="sect1" class="mt-[170px] w-screen max-lg:mt-[330px]">
-        <img id="iphone" src="./assets/img/yan3.jpg" alt="iphone">
-        <img id="iphone" src="./assets/img/yann.jpg" alt="iphone">
-        <img id="iphone" src="./assets/img/yann1.png" alt="iphone">
-        <img id="iphone" src="./assets/img/yann2.jpg" alt="iphone">
+        <img id="iphone" src="assets/img/yan3.jpg" alt="iphone">
+        <img id="iphone" src="assets/img/yann.jpg" alt="iphone">
+        <img id="iphone" src="assets/img/yann1.png" alt="iphone">
+        <img id="iphone" src="assets/img/yann2.jpg" alt="iphone">
 
     </section>
     <section class="bg-[#F4F5F8] mb-2 w-screen">
@@ -78,7 +78,7 @@ $pcct = "./assets/php/computerct.php"
 
                 <div class="w-[300px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 max-sm:w-[95%]">
                     <a href="#">
-                        <img class="p-8 rounded-t-lg w-[300pxpx]  h-[300px] hover:h-[350px] hover:w-[350px]" src="./assets/upload/<?= $v['pictures'] ?>" alt="product image" />
+                        <img class="p-8 rounded-t-lg w-[300pxpx]  h-[300px] hover:h-[350px] hover:w-[350px]" src="assets/upload/<?= $v['pictures'] ?>" alt="product image" />
                     </a>
                     <div class="px-5 pb-5">
                         <a href="#">
@@ -107,7 +107,7 @@ $pcct = "./assets/php/computerct.php"
                         <div class="bg-orange-500 w-[40px]  text-center py-[1px] rounded-full"><?= $v["quantites"] ?></div>
                         <div class="flex items-center justify-between">
                             <span class="text-xl font-bold text-gray-900 dark:text-white" id="prix">$<?= $v["prix"] ?></span>
-                            <a href="./assets/php/add_panier.php?id=<?= $v['id'] ?>" id="" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                            <a href="assets/php/add_panier.php?id=<?= $v['id'] ?>" id="" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
                         </div>
                         <div></div>
                     </div>
@@ -124,16 +124,16 @@ $pcct = "./assets/php/computerct.php"
 
 
         <?php
-        require("./assets/php/footer.php")
+        require("assets/php/footer.php")
         ?>
         
-    <script src="./assets/js/deroule.js">
+    <script src="assets/js/deroule.js">
 
     </script>
-    <script src="./assets/js/iphone.js">
+    <script src="assets/js/iphone.js">
 
     </script>
-    <script src="./assets/panier.js">
+    <script src="assets/panier.js">
 
     </script>
      
@@ -153,7 +153,7 @@ $pcct = "./assets/php/computerct.php"
         window.addEventListener('resize', updatebge);
         window.addEventListener('scroll', updatebge);
     </script>
-    <script src="./assets/js/seach.js"></script>
+    <script src="assets/js/seach.js"></script>
 
 </body>
 
