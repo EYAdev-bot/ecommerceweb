@@ -35,11 +35,6 @@ if (isset($_GET["id"])) {
  foreach ($_SESSION['panier'] as $k => $v) {
     $_SESSION['nombres'] += $v["quantite"];
  }
-var_dump($_SESSION['nombres']) ;
-        
-        echo$quant_panier ;
-
-        var_dump($_SESSION["panier"]) ;
         header("location: ../../index.php?smspanier=$quant_panier") ;
     } catch (PDOException $e) {
         echo "error" . $e->getMessage() ;

@@ -1,4 +1,8 @@
-<?php include_once './head.php' ?>
+<?php 
+session_start() ;
+include_once './head.php' ;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +70,6 @@
                     <?php
 
                     }
-                    // var_dump($_SESSION['panier']) ;
                     ?>
                     <?php
                     $sums = 0;

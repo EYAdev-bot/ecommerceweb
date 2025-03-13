@@ -19,7 +19,7 @@ require("./connect_to_bd.php") ;
     } catch (PDOException $e) {
         $sms ="mot de passe ou email invalide";
         header("location:sing_up.php?sms=$sms");
-        exit ;
+        exit() ;
         
     }
 
