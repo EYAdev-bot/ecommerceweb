@@ -1,4 +1,5 @@
 <?php
+session_start();
 $ct = "All Categories";
 $title = "home";
 $connect = "assets/php/sing_up.php";
