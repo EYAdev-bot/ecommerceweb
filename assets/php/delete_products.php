@@ -25,9 +25,9 @@ if (isset($_POST["oui"])) {
     $stmt = $conn->prepare("DELETE FROM produits WHERE id=:id");
     $stmt->bindParam(":id", $id);
     $stmt->execute();
-    header("location:./products.php");
+    header("location:products.php");
 } else if (isset($_POST["non"])) {
-    header("location:./products.php");
+    header("location:products.php");
 }
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-include_once "./connect_to_bd.php";
+include_once "connect_to_bd.php";
 
 ?>
 
@@ -25,9 +25,9 @@ if (isset($_POST["oui"])) {
     $stmt= $conn->prepare("DELETE FROM users WHERE id=:id");
     $stmt->bindParam(":id", $id);
     $stmt->execute();
-    header("location:./users.php");
+    header("location:users.php");
 }else if (isset($_POST["non"])) {
-    header("location:./users.php");
+    header("location:users.php");
 }
 ?>
 

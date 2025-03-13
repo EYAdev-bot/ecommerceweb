@@ -29,14 +29,14 @@ session_start();
                 <a class="hover:text-orange-500" href="<?php if (isset($login)) {
                                                             echo $login;
                                                         } else {
-                                                            echo "./login.php";
+                                                            echo "login.php";
                                                         }
                                                         ?>">Login</a> <br>
 
                 <a class="hover:text-orange-500" href="<?php if (isset($connect)) {
                                                             echo $connect;
                                                         } else {
-                                                            echo "./sing_up.php";
+                                                            echo "sing_up.php";
                                                         }
                                                         ?>">Sing up</a>
             </div>
@@ -50,7 +50,7 @@ session_start();
                                                     if (isset($panier)) {
                                                         echo $panier;
                                                     } else {
-                                                        echo "./panier.php";
+                                                        echo "panier.php";
                                                     }
                                                     ?>
                 ">
@@ -86,14 +86,14 @@ session_start();
                                                             if (isset($phonect)) {
                                                                 echo $phonect;
                                                             } else {
-                                                                echo "./phonect.php";
+                                                                echo "phonect.php";
                                                             }
                                                             ?>">Phones collections</a> <br>
                     <a class="hover:text-orange-500" href="<?php
                                                             if (isset($pcct)) {
                                                                 echo $phonect;
                                                             } else {
-                                                                echo "./computerct.php";
+                                                                echo "computerct.php";
                                                             }
                                                             ?>">Pc collections</a>
 
@@ -117,7 +117,7 @@ session_start();
                         <a class="hover:text-orange-500" href="<?php if (isset($admin)) {
                                                                         echo "$admin";
                                                                     } else {
-                                                                        echo "./admin.php";
+                                                                        echo "admin.php";
                                                                     } ?>">
                         <?php
                                                                     echo "admin";

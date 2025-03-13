@@ -1,5 +1,5 @@
 <?php
-require("./connect_to_bd.php")
+require("connect_to_bd.php")
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ require("./connect_to_bd.php")
 
             <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
             <div>
-                <p>Vous avez déjà un compte ? <a href="./sing_up.php" class="text-blue-700">se connecter</a></p>
+                <p>Vous avez déjà un compte ? <a href="sing_up.php" class="text-blue-700">se connecter</a></p>
             </div>
             <div class="text-red-700"><?php
                                         if (isset($_GET["sms"])) {
