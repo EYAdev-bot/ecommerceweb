@@ -1,5 +1,5 @@
 <?php
-$servername = "mysql-yann-dev..alwaysdata.net" ;
+$servername = "mysql-yann-dev.alwaysdata.net" ;
 $dbname = "yann-dev_ecommerce1";
 $username = "yann-dev" ;
 $password = "eya-dev";
