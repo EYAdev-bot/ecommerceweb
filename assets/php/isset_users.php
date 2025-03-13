@@ -1,6 +1,6 @@
 <?php
 session_start() ;
-ob_start() ;
+
 ?>
     <?php
 require("./connect_to_bd.php") ;
@@ -39,6 +39,5 @@ require("./connect_to_bd.php") ;
             echo 'error' .$e->getMessage() ;
         }
     }
-    echo$_SESSION["users"]["mail"]["roles"]
     ?>
     
